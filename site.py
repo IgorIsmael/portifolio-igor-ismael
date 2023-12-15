@@ -17,7 +17,8 @@ from google.colab import drive
 
 drive.mount("/content/drive", force_remount=True)
 
-os.environ.get('KEY')
+os.environ.get('RENDER')
+os.environ.get('PORT')
 
 # Replace the folder URL with the direct link to the Excel file
 arquivo_excel = "/content/drive/MyDrive/ProjetoEmpresa/empresa.xlsx"
