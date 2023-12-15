@@ -12,9 +12,12 @@ web: gunicorn site:app
 from dash import Dash, html, dcc, Input, Output, dash_table
 import plotly.express as px
 import pandas as pd
+import os
 from google.colab import drive
 
 drive.mount("/content/drive", force_remount=True)
+
+os.environ.get('KEY')
 
 # Replace the folder URL with the direct link to the Excel file
 arquivo_excel = "/content/drive/MyDrive/ProjetoEmpresa/empresa.xlsx"
